@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="javascrpit" href="landing.js">
+    <link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navlist">
+                <div class="logo"><img src="image/title.png" alt="logo"></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about_us">About Us</a></li>
+                <li><a
+                        href="https://www.amazon.in/s?k=whey+protein&crid=36KIKP6UCZ5RW&sprefix=whe%2Caps%2C295&ref=nb_sb_ss_ts-doa-p_2_3">Product</a>
+                </li>
+                <li><a href="#Programs">Programs</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+
+            </ul>
+            <div class="rightnav">
+                <a href="https://www.facebook.com/GoldsGymIndia/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/GoldsGymIndia"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/goldsgymindia/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/goldsindia/videos"><i class="fa fa-youtube"></i></a>
+
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <Section id="home" class="home">
+        <div class="container">
+            <div class="text">
+                <h1>NO <br><span style="color: chocolate;">LIMIT</span> FITNESS.</h1>
+                <P>In this world there are very less people consider about there health.If you wants to try something
+                    new <br>
+                    then this is the perfect place for you.Upgrade your body by <br>
+                    joining the below given button.</P>
+                <a href="#contactus"><button>Join Now</button></a>
+            </div>
+
+    </Section>
+    <Section class="about_us" id="about_us">
+        <div class="heading">
+            <H1>About <span class="heading1">Us</span></H1>
+        </div>
+        <div class="aboutustext">
+            <div class="heading11">
+                <h1>A TRULY EPIC GYM</h1>
+                <H1 style="color:orangered">OPEN 24/7!</H1>
+
+            </div>
+            <div class="headingp">
+                <p>To know more about our training classes,you can contact us on our number <br>
+                    or through quiery from </p>
+                <p class="paragram1">GYM AND HALL: <span class="spanp"> Will feel like they belong and can relax.</snap>
+                </p>
+                <P class="paragram1">COURT:<span class="spanp"> This gym belongs to our clients.</span></P>
+                <p class="paragram1">SWIMINGPOOL:<span class="spanp">Gym has an outdoor pool.</span></p>
+                <p>Only thing you need to do is <span><a href="contactus.html">Contact Us</a></span></p>
+            </div>
+            <div class="wrapper1">
+                <p style="color: orange;"> View Our Gym Near By You</p>
+                <img class="wrapper12" alt="map" src="image/map.jpg">
+                <a
+                    href="https://www.google.com/maps/search/nearby+gym/@19.3650685,72.8043626,15z/data=!3m1!4b1?entry=ttu">
+                    <p>Click here to view in<span>Map</span></p>
+                </a>
+            </div>
+
+            <div>
+
+    </Section>
+    <Section id="Programs">
+        <div class="container">
+            <h2>Our <span style="color: orange;"> Programs</span></h2>
+            <br>
+            <br>
+            <div class="program-images">
+                <div class="program">
+                    <img src="image/cardio.jpg" alt="Program 1">
+                    <p>Cardio + Strength Training</p>
+                    <p>Heavy Lifts</p>
+                    <p>Runnig</p>
+                    <p>Bulding Muscle</p>
+                    <p>Fat loss</p>
+                    <button class="enroll-button">Enroll Now</button>
+                </div>
+                <div class="program">
+                    <img src="image/mobility.jpg" alt="Program 2">
+                    <p>Mobility + Agility</p>
+                    <p>Streching</p>
+                    <p>Teo Taps</p>
+                    <p>Crocodile Breathing </p>
+                    <p>Hip Rotation </p>
+                    <button class="enroll-button">Enroll Now</button>
+                </div>
+                <div class="program">
+                    <img src="image/calisthenics.jpg" alt="Program 3">
+                    <p>Calisthenics</p>
+                    <p>Combo Crunch</p>
+                    <p>Start Jump</p>
+                    <p>push Ups</p>
+                    <p>front Liver</p>
+                    <button class="enroll-button">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+
+    </Section>
+    <Section class="contactus" id="contactus">
+        <div class="contact-form-container">
+            <h2 style="color: blanchedalmond;">Contact Us</h2>
+            <form name="myform" action="" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter yout Email" required>
+
+                <label for="email">location:</label>
+                <input type="text" id="city" name="city" placeholder="Enter yout city" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </Section>
+    <script>
+        function handleSubmit() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var submissionMessage = "Form submitted!\n";
+            submissionMessage += "Name: " + name + "\n";
+            submissionMessage += "Email: " + email + "\n";
+            submissionMessage += "Message: " + message;
+
+            alert(submissionMessage);
+            
+           
+            return false;
+        }
+    </script>
+</body>
+
+</html>

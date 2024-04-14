@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 30%;
+  border: 2px solid wheat;
+  border-radius: 50px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+.navbar {
+  backdrop-filter: blur(40px);
+  display: flex;
+}
+
+.navlist {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.navlist li {
+  list-style: none;
+  padding: 26px 30px;
+}
+
+.navlist li a {
+  margin-inline: 10px;
+  text-decoration: none;
+  color: white;
+  position: relative; /* Ensure proper positioning of the pseudo-element */
+}
+
+.navlist li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Adjust thickness of underline as needed */
+  bottom: -2px; /* Adjust distance of underline from text as needed */
+  background-color: transparent; /* Initial color of underline */
+  transition: background-color 0.3s ease; /* Transition for smooth color change */
+}
+
+.navlist li a:hover::before {
+  background-color: rgb(255, 0, 0); /* Color of underline on hover */
+}
+
+.navlist li a:hover {
+  color: rgb(255, 0, 0); /* Color of text on hover */
+}
+
+.rightnav {
+  width: 30%;
+  color: white;
+  padding: 26px 1px;
+  text-align: right;
+}
+
+.rightnav a {
+  padding: 13px;
+  color: white;
+}
+
+.rightnav a:hover {
+  padding: 13px;
+  color: rgb(255, 0, 21);
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8) url("image/bg.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+Section {
+  height: 100vh;
+  margin-top: 0px; /* Add margin-top to account for the fixed navbar */
+}
+.home {
+  background-image: url(image/home.jpg);
+  padding-top: 10rem;
+
+  overflow-x: hidden;
+}
+#home .container {
+  /* Example styles for container inside home section */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#home .text {
+  /* Example styles for text inside home section */
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.text {
+  margin-left: 2%;
+  margin-top: 20px;
+}
+.text h1 {
+  font-size: 70px;
+}
+.text p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.text button {
+  width: 170px;
+  font-size: 100px;
+  height: 44px;
+  background-color: rgb(176, 42, 42);
+  border: none;
+  color: white;
+  margin-top: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.text button:hover {
+  color: black;
+  background-color: white;
+}
+
+.about_us {
+  background: rgba(0, 0, 0, 0.8) url("image/aboutus.jpg");
+}
+
+.heading H1 {
+  text-align: center;
+  font-size: 50px;
+}
+.heading H1 span {
+  color: orange;
+}
+.wrapper1 {
+  margin-left: 909px;
+}
+.wrapper1 a {
+  text-decoration: none;
+  color: orange;
+}
+.paragram1 {
+  color: bisque;
+}
+
+.wrapper1 img {
+  border-radius: 10px;
+}
+
+.aboutustext {
+  margin-left: 4%;
+}
+.headingp p a {
+  text-decoration: underline;
+  color: orange;
+}
+.heading11 {
+  font: 20px;
+}
+.headingp {
+  font-size: 20px;
+}
+.spanp {
+  color: #ffffff;
+}
+
+#Programs {
+  background-image: url(image/programs.jpg);
+}
+#contactus {
+  background-image: url(image/contact.jpg);
+}
+#Programs {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#Programs .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#Programs h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.program-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.program {
+  text-align: center;
+  margin: 0 10px;
+
+  color: white;
+}
+
+.program img {
+  width: 300px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.program p {
+  margin-bottom: 10px;
+  font-size: 36;
+}
+
+.enroll-button {
+  background-color: #ff4d00;
+  color: #f5ebeb;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-button:hover {
+  background-color: white;
+  color: red;
+}
+.contact-form-container {
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 400px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.contact-form-container h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form-container label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
